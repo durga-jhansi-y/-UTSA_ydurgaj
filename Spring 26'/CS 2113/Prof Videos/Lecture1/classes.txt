@@ -1,0 +1,3 @@
+Modularity = breakdown a system into components 
+Encapsulation = bundling of data 
+Classes = A class is a blueprint for providing initial values for state and implementation behaviors. 
