@@ -2,12 +2,12 @@ package ClassesEx;
 
 public class Dog{
 
-    public int id;
-    public String name;
-    public double weight;
-    public int age;
-    public String breed;
-    public String size;
+    int id;
+    String name;
+    double weight;
+    int age;
+    String breed;
+    String size;
     String color;
 
     public boolean overWeight(){
