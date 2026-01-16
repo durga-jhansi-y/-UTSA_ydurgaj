@@ -1,3 +1,7 @@
 Modularity = breakdown a system into components 
 Encapsulation = bundling of data 
 Classes = A class is a blueprint for providing initial values for state and implementation behaviors. 
+
+Declaration of package at the start of code isnt compuslary but is a common most reccomended practice. 
+
+Object = we create a class to store memory by useing reserved word new is called Object , which is teh actual data in memory. 
