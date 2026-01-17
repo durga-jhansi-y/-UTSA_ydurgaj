@@ -5,6 +5,24 @@ public class Patient {
     private String name;
     private String email;
 
+    // constructor
+    public Patient(){
+        id = 0;
+        name = null;
+        email = null;
+    }
+
+    public Patient(int id , String name, String email ){
+        // setId(newId);
+        // setName(newName);
+        // setEmail(newEmail);
+        this.id = id;
+        this.name = name;
+        this.email = email;
+
+        System.out.println("Patient created with info : ID: " + id + ", Name: " + name + ", Email: " + email);
+    }
+
     //getters and setters = gets info and sets info 
 
     public int getId(){
@@ -22,7 +40,7 @@ public class Patient {
         return email;
     }
 
-    // public void setId(int newId){
+    // private void setId(int newId){
     //     System.out.println("Patient ID changed from " + id + " to " + newId + ".");
     //     id = newId;
     // }

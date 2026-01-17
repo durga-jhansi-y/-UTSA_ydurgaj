@@ -11,3 +11,7 @@ Scope/Visibility =who is allowed to see/ access  the data
 2. private 
 3. default 
 4. protected 
+
+Constructors = creating new object with parameters to define the functionality of the object 
+
+KEYWORD : this. = when local variable has same name as global variable , we use this to refernece the global variable. 
