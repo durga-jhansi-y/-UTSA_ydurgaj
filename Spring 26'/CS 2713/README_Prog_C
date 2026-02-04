@@ -3,6 +3,20 @@ Intro to C
 Data (Types , Values and Variables)
 1. Expressions 
 2. Types : 
+    short int (%hd)
+    unsigned short int (%hu)
+    unsigned int (%u)
+    int (%d)
+    long int (%ld)
+    unsigned long int (%lu)
+    long long int (%lld)
+    unsigned long long int (%llu)
+    signed char (%c)
+    unsigned char (%c)
+    float (%f)
+    double (%lf)
+    long double (%Lf)
+3.  Variables :
 
 Extras : 
 CPU : ALU (Arthimetic logic unit) { ex: types and expressions}
