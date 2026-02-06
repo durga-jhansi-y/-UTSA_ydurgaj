@@ -26,7 +26,7 @@ Data (Types , Values and Variables)
     f. lifetime
 
     Declaration - {type} {name} = {value} ;
-    
+
 
 4. Values :
     a. literal value - a value that is directly represented in the source code (e.g., 42, 'A', 3.14).
@@ -34,7 +34,13 @@ Data (Types , Values and Variables)
     c. operation 
     d. function call 
 
-     
+Statements :
+1. Expression  vs statement
+    a. expression : concerned with ALU , its expressing a value 
+    b. statement : concerned with CU , its expressing an action , not evaluated they are executed 
+2. Types of statements :
+    a. simple statement 
+    b. compound statement
 Extras : 
 CPU : ALU (Arthimetic logic unit) { ex: types and expressions}
       CU (Control unit) {ex: statements}
