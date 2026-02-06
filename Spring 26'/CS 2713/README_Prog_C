@@ -24,13 +24,17 @@ Data (Types , Values and Variables)
     d. location 
     e. scope
     f. lifetime
+
+    Declaration - {type} {name} = {value} ;
+    
+
 4. Values :
     a. literal value - a value that is directly represented in the source code (e.g., 42, 'A', 3.14).
     b. variable name - 
     c. operation 
     d. function call 
 
-
+     
 Extras : 
 CPU : ALU (Arthimetic logic unit) { ex: types and expressions}
       CU (Control unit) {ex: statements}
