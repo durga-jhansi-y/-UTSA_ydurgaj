@@ -1,4 +1,4 @@
-package Assignment_2;
+package Assignment_2.PART_A.Codes;
 import java.io.*;
 import java.util.*;
 
@@ -21,6 +21,8 @@ public class RandMe {
         }
 
         writer.close();
+
+        System.out.println("Jasen Daniel Drileck (VHA667), Durga Jhansi Yerukala (SCP203) , Vyshanavi Sai Yadlapati (FPL006).");
 
         System.out.println("1000 random numbers saved to RandNumb.txt");
     }
