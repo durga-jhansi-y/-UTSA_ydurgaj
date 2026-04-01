@@ -36,10 +36,38 @@ public class Heaptree {
         return min;
     }
 
-    //Max-Heap helpers - Vyshanavi's code 
-    
+    //Max-Heap helpers - Vyshanavi's code
 
-    // Main 
+    static void insertMax(int val) {
+        heap[size] = val;
+        size++;
+        int i = size - 1;
+        while (i > 0) {
+            int parent = (i - 1) / 2;
+            if (heap[parent] < heap[i]) {
+                int tmp = heap[parent]; heap[parent] = heap[i]; heap[i] = tmp;
+                i = parent;
+            } else break;
+        }
+    }
+
+    static int extractMax() {
+        int max = heap[0];
+        heap[0] = heap[size - 1];
+        size--;
+        int i = 0;
+        while (true) {
+            int left = 2*i+1, right = 2*i+2, largest = i;
+            if (left  < size && heap[left]  > heap[largest]) largest = left;
+            if (right < size && heap[right] > heap[largest]) largest = right;
+            if (largest == i) break;
+            int tmp = heap[i]; heap[i] = heap[largest]; heap[largest] = tmp;
+            i = largest;
+        }
+        return max;
+    }
+
+    // Main
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -78,7 +106,6 @@ public class Heaptree {
         // 3. Build and display
         size = 0;
         if (choice == 1) {
-            // Build Min Heap - Durga's code
             for (int v : input) insertMin(v);
 
             System.out.println("Extraction sequence (Min Heap):");
@@ -87,7 +114,12 @@ public class Heaptree {
             }
 
         } else if (choice == 2) {
-            // Build Max Heap - Vyshanavi's code
+            for (int v : input) insertMax(v);
+
+            System.out.println("Extraction sequence (Max Heap):");
+            while (size > 0) {
+                System.out.println("  Extracted Max: " + extractMax());
+            }
 
         } else {
             System.out.println("Invalid choice. Please run again and press 1 or 2.");
