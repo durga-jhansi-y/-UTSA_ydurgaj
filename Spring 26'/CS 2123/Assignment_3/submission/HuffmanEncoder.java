@@ -3,6 +3,8 @@ import java.util.PriorityQueue;
 
 //Class for each node in our Huffman Tree
 //Internal Class to build the tree
+
+// Jasen' code 
 class HuffmanNode{
     char data;
     int frequency;
@@ -146,13 +148,13 @@ public class HuffmanEncoder {
         HuffmanNode root = createTree();
         generateHuffmanCode(root, new StringBuilder(), codeTable);
 
-        // Print variable bit representation (character : code)
+        // Print variable bit representation (character : code) - Durga's code [this part only && creation of huffman encoder pdf file and table]
         System.out.println("Variable Bit Representation:");
         for(char key : codeTable.keySet()){
             System.out.println(key + " : " + codeTable.get(key));
         }
         System.out.println();
-        
+
 
         System.out.println("--------------------");
         int totalBitsNeeded = 0;
