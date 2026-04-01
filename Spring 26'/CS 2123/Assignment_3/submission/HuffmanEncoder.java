@@ -75,8 +75,7 @@ public class HuffmanEncoder {
         }
 
             //Create a Priority Queue with the smallest frequency elements towards the front
-            PriorityQueue<HuffmanNode> queue =
-                    new PriorityQueue<>((a,b) -> a.frequency - b.frequency);
+            PriorityQueue<HuffmanNode> queue = new PriorityQueue<>((a,b) -> a.frequency - b.frequency);
 
             //Add Elements to the queue
             for(char key : characters.keySet()){
